@@ -9,7 +9,7 @@ export default (getsDataGame, task) => {
   console.log(task);
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = getsDataGame();
-    console.log(`Question ${question}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer:');
     if (userAnswer !== answer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
